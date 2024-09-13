@@ -1,46 +1,96 @@
-* {
-  box-sizing: border-box;
+button {
+  border: none;
 }
 
-body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  color: black;
-  background-color: white;
+:root {
+  --color-choice-a: rgb(248, 110, 110);
+  --color-choice-b: rgb(145, 249, 145);
+  --color-choice-c: rgb(128, 128, 186);
 }
 
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
-  background-color: #eee;
+.bg-a {
+  background-color: var(--color-choice-a);
 }
 
-nav a {
-  display: inline-block;
-  min-width: 9rem;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  border: solid 1px #aaa;
-  text-align: center;
-  text-decoration: none;
-  color: #555;
+.bg-b {
+  background-color: var(--color-choice-b);
 }
 
-nav a[aria-current='page'] {
-  color: #000;
-  background-color: #d4d4d4;
+.bg-c {
+  background-color: var(--color-choice-c);
 }
 
-main {
+.bg-green {
+  background-color: green;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-large {
+  font-size: large;
+}
+
+.padding-medium {
   padding: 1rem;
 }
 
-h1 {
-  font-weight: bold;
-  font-size: 1.5rem;
+.rounded {
+  border-radius: 8px;
 }
+
+.raised {
+  box-shadow: 1px 1px 8px 2px black;
+}
+
+.active\:raised:active {
+  box-shadow: 1px 1px 8px 2px black;
+}
+
+.sunken {
+  box-shadow: inset 1px 1px 2px 2px black;
+}
+
+.active\:sunken:active {
+  box-shadow: inset 1px 1px 2px 2px black;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-small {
+  gap: 1rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.brighten {
+  filter: brightness(1.3);
+}
+
+.hover\:brighten:hover {
+  filter: brightness(1.3);
+}
+
+/*
+.transition-slowley {
+  transition: all 1000ms:ease-in-out;
+}
+
+ .transition-quick {
+  transition: all 100ms: ease-in-out;
+}
+/*

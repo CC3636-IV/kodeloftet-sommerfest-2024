@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="index.css" />
-    <script type="module" src="index.js"></script>
-  </head>
-  <body>
-    <h1>Kodeloftets Barometer</h1>
 
-    <p>Hvor gøy er sommerfesten</p>
+<head>
+  <title>Feedback</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="index.css" />
+  <script type="module" src="index.js"></script>
+</head>
 
-    <div>
-      <button id="button-a">Kunne vært pener vær</button>
-      <button id="button-b">Velkomst drinken var god</button>
-      <button id="button-c">Når begynner lekene</button>
-    </div>
+<body>
+  <h1 class="raised padding-medium">Kodeloftets Barometer</h1>
 
-    <a id="result-link">Result</a>
-  </body>
+  <p class="sunken padding-medium">Hvor gøy er sommerfesten</p>
+
+  <div class="flex-column gap-small">
+    <button class="bg-a text-large padding-medium rounded raised active:sunken hover:brighten" id="button-a">Kunne
+      vært pener
+      vær</button>
+    <button class="bg-b text-large padding-medium rounded raised active:sunken hover:brighten" id="button-b">Velkomst
+      drinken
+      var
+      god</button>
+    <button class="bg-c text-large padding-medium rounded raised active:sunken hover:brighten" id="button-c">Når
+      begynner
+      lekene</button>
+  </div>
+  <div class="flex justify-between items-center">
+    <a class="padding-medium rounded raised active:sunken" id="result-link">Result</a>
+  </div>
+</body>
+
 </html>
